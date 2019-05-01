@@ -1,0 +1,62 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:id="@+id/viewContactsToolbar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/EditContactToolbar"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_backarrow"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/ivBackArrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/textContactToolbar"
+                    android:layout_toRightOf="@+id/ivBackArrow"/>
+
+
+                <ImageView
+                    android:id="@+id/ivCheckMark"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/ic_checkmark_white" />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/editContactFragmentDelete"
+                    android:layout_alignParentRight="true"/>
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</merge>

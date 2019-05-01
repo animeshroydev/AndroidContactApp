@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relLayout1"
+            android:layout_height="wrap_content">
+
+       <include layout="@layout/snippet_edit_contact_toolbar"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relLayout1"
+            android:id="@+id/relLayout3"
+            android:padding="25dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp"
+
+                android:id="@+id/contactImage"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/ic_camera"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/ivCamera"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/contactImage"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relLayout3"
+            android:padding="10dp"
+            android:id="@+id/relLayout4"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivPerson"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_person_black"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/ivPerson"
+                android:inputType="textNoSuggestions"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/etContactName"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relLayout4"
+            android:padding="10dp"
+            android:id="@+id/relLayout5"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivPhone"
+                android:src="@drawable/ic_phone_grey"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/ivPhone"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/etContactPhone"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:textColor = "@android:color/black"
+                android:entries="@array/device_options"
+                android:textSize = "16sp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/ivPhone"
+                android:id="@+id/selectDevice"
+                android:layout_alignStart="@+id/etContactPhone"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relLayout5"
+            android:padding="10dp"
+            android:id="@+id/relLayout6"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivEmail"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_email_grey"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/ivEmail"
+                android:inputType="textNoSuggestions"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/etContactEmail"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

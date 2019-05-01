@@ -1,0 +1,50 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:id="@+id/viewContactsToolbar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/ContactToolbar"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_backarrow"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/ivBackArrow" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_edit"
+                    android:layout_marginEnd="70dp"
+                    android:id="@+id/ivEdit"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/deleteContactFragment"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</merge>
